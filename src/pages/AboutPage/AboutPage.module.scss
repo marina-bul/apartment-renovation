@@ -1,0 +1,17 @@
+.head {
+  width: 60%;
+  margin-top: 80px;
+
+  text-align: left;
+}
+
+.title {
+  margin-bottom: 40px;
+
+  font-size: 42px;
+  line-height: 52px;
+
+  & .accentString {
+    color: var(--color-blue);
+  }
+}

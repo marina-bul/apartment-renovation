@@ -1,0 +1,18 @@
+@import "shared/styles/mixins";
+
+.notFoundPage {
+  @include flex-center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.title {
+  margin-bottom: 25px;
+
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.goToMainBtn {
+  gap: 14px;
+}

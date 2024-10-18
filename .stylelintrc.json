@@ -12,13 +12,31 @@
           "emptyLineBefore": "always"
         },
         {
-          "groupName": "box-model",
+          "groupName": "display",
           "properties": [
             "display",
+            "align-items",
+            "justify-content",
+            "gap",
+            "flex-direction"
+          ],
+          "emptyLineBefore": "always"
+        },
+        {
+          "groupName": "box-model",
+          "properties": [
             "width",
             "height",
             "margin",
+            "margin-top",
+            "margin-bottom",
+            "margin-right",
+            "margin-left",
             "padding",
+            "padding-top",
+            "padding-bottom",
+            "padding-right",
+            "padding-left",
             "border",
             "border-radius",
             "box-sizing"

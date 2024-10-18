@@ -1,4 +1,9 @@
+@import "shared/styles/mixins";
+
 .button {
+  @include flex-center;
+  justify-content: center;
+
   padding: 18px;
   border: none;
 
