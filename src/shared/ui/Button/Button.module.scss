@@ -1,0 +1,45 @@
+.button {
+  padding: 18px;
+  border: none;
+
+  font-size: 13px;
+  font-weight: 800;
+  line-height: 24px;
+
+  cursor: pointer;
+  outline: none;
+
+  &.clear {
+    padding: 0;
+
+    color: var(--color-black);
+
+    background-color: transparent;
+  }
+
+  &.red {
+    color: var(--color-white);
+
+    background-color: var(--color-red);
+  }
+
+  &.white {
+    color: var(--color-black);
+
+    background-color: var(--color-white);
+  }
+
+  &.blue {
+    color: var(--color-white);
+
+    background-color: var(--color-blue);
+  }
+
+  &.rounded {
+    border-radius: 60px;
+  }
+
+  &.circle {
+    border-radius: 50%;
+  }
+}

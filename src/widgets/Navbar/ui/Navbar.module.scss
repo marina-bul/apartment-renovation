@@ -1,0 +1,55 @@
+.navbar {
+  display: flex;
+  width: 100%;
+  height: var(--navbar-height);
+
+  color: var(--primary-color);
+  align-items: center;
+  margin-bottom: 28px;
+
+  & .toggleTheme {
+    width: 45px;
+    height: 45px;
+    padding: 0;
+  }
+
+  & .toggleLang {
+    padding: 10px;
+  }
+
+  & .profile {
+    width: 36px;
+    height: 36px;
+    padding: 10px;
+  }
+}
+
+.links {
+  display: flex;
+  width: 40%;
+
+  font-weight: 700;
+  align-items: center;
+  gap: 40px;
+  margin-left: 72px;
+  margin-right: 65px;
+  padding-top: 5px;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.contacts {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-right: 36px;
+}
+
+.toggleThemeIcon {
+  width: 40px;
+  height: 40px;
+}
