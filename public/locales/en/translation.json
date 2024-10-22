@@ -4,5 +4,10 @@
     "prices": "Price",
     "about": "About us"
   },
-  "phone-number": "+7 (985) 123-456-78"
+  "phone-number": "+7 (985) 123-456-78",
+  "something-went-wrong": {
+    "title": "Something went wrong...",
+    "descr": "Keep calm! You can go to main page."
+  },
+  "back-to-main": "Go to main"
 }

@@ -28,7 +28,7 @@ export const Navbar = ({ className, toggleTheme }: NavbarProps) => {
           {t('nav-links.prices')}
         </AppLink>
         <AppLink to="/about" theme={AppLinkTheme.PRIMARY}>
-        {t('nav-links.about')}
+          {t('nav-links.about')}
         </AppLink>
       </div>
       <div className={cls.actions}>

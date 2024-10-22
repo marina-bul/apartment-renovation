@@ -1,14 +1,10 @@
 @import "shared/styles/mixins";
 
-.notFoundPage {
+.pageError {
   @include flex-center;
   justify-content: center;
+  gap: 15px;
   flex-direction: column;
-}
 
-.title {
-  margin-bottom: 25px;
-
-  font-size: 32px;
-  font-weight: 700;
+  padding: 30px;
 }

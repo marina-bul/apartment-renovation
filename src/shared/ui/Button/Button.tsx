@@ -5,7 +5,7 @@ import { ButtonHTMLAttributes, FC } from "react";
 type Variant = "clear" | "white" | "blue" | "red";
 type Shape = "circle" | "rounded";
 
-interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
+export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   className?: string;
   variant?: Variant;
   shape?: Shape;
