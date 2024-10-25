@@ -1,0 +1,105 @@
+.mainBanners {
+  display: grid;
+  gap: 20px;
+  grid-template-areas:
+    "banner1 banner2 banner2"
+    "banner1 banner3 banner4";
+}
+
+.banner1 {
+  position: relative;
+  grid-area: banner1;
+
+  & .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    padding: 50px 30px;
+
+    & .title {
+      margin-bottom: 20px;
+
+      font-size: 38px;
+      font-weight: 700;
+      line-height: 1.5;
+    }
+
+    & .descr {
+      margin-bottom: 38px;
+
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 1.5;
+    }
+  }
+}
+
+.banner2 {
+  position: relative;
+  grid-area: banner2;
+
+  & .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    padding: 50px 30px;
+
+    & .title {
+      margin-bottom: 42px;
+
+      font-size: 25px;
+      font-weight: 700;
+      line-height: 1.5;
+
+      color: var(--color-white);
+    }
+  }
+}
+
+.banner3 {
+  position: relative;
+  grid-area: banner3;
+
+  & .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    padding: 50px 30px;
+
+    color: var(--color-white);
+
+    & .title {
+      margin-bottom: 10px;
+
+      font-size: 25px;
+      font-weight: 700;
+      line-height: 1.5;
+    }
+  }
+}
+
+.banner4 {
+  position: relative;
+  grid-area: banner4;
+
+  & .content {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    padding: 50px 30px;
+
+    text-align: right;
+
+    & .title {
+      margin-bottom: 10px;
+
+      font-size: 25px;
+      font-weight: 700;
+      line-height: 1.5;
+    }
+  }
+}

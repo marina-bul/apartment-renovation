@@ -36,6 +36,14 @@ module.exports = {
       { markupOnly: true, onlyAttribute: [""] },
     ],
   },
+  overrides: [
+    {
+      files: [".test.ts(x)?$"],
+      rules: {
+        "i18next/no-literal-string": "off",
+      },
+    },
+  ],
   globals: {
     __IS_DEV__: true,
   },
