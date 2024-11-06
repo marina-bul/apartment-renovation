@@ -1,6 +1,3 @@
-import { cn } from 'shared/libs';
-import cls from './GoToMainButton.module.scss';
-
 import { FC } from 'react';
 import { Button, ButtonProps } from 'shared/ui/Button/Button';
 import { useTranslation } from 'react-i18next';
@@ -15,7 +12,7 @@ export const GoToMainButton:FC<GoToMainButtonProps> = ({className}) => {
   const {t} = useTranslation()
   return (
     <AppLink to={"/"}>
-      <Button className={cn([cls.goToMainBtn, className])}>      
+      <Button className={className}>      
         {t('back-to-main')}
         <ArrowCirle />    
       </Button>

@@ -1,0 +1,109 @@
+@import "shared/styles/mixins";
+
+.banner {
+  position: relative;
+
+  height: 100%;
+  border-radius: 40px;
+
+  overflow: hidden;
+
+  & .image {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.content {
+  position: absolute;
+  top: 50px;
+  left: 30px;
+
+  &.alignRight {
+    right: 30px;
+    left: auto;
+
+    text-align: right;
+  }
+
+  &.whiteText {
+    color: var(--color-white);
+  }
+
+  & .title {
+    margin-bottom: 20px;
+
+    font-weight: 700;
+    line-height: 1.5;
+
+    &.sizeL {
+      font-size: 38px;
+    }
+
+    &.sizeS {
+      font-size: 26px;
+    }
+  }
+
+  & .descr {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+  }
+
+  & .btn {
+    padding-right: 26px;
+    padding-left: 26px;
+  }
+
+  & .additional {
+    @include flex-center;
+    gap: 15px;
+
+    margin-top: 38px;
+
+    & .additionalText {
+      font-size: 53px;
+      font-weight: 800;
+
+      &.blueText {
+        color: var(--color-blue);
+      }
+
+      &.orangeText {
+        color: var(--color-orange);
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .banner {
+    border-radius: 20px;
+  }
+
+  .content {
+    top: 30px;
+
+    & .title {
+      &.sizeL {
+        font-size: 26px;
+      }
+
+      &.sizeS {
+        font-size: 18px;
+      }
+    }
+
+    & .additional {
+      margin-top: 30px;
+
+      & .additionalText {
+        font-size: 48px;
+      }
+    }
+  }
+}

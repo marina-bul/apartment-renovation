@@ -2,6 +2,7 @@
 
 .navbar {
   @include flex-center;
+  justify-content: space-between;
 
   width: 100%;
   height: var(--navbar-height);
@@ -26,13 +27,15 @@
   }
 }
 
+.linksList {
+  @include flex-center;
+  gap: 70px;
+}
+
 .links {
   @include flex-center;
   gap: 40px;
 
-  width: 40%;
-  margin-right: 65px;
-  margin-left: 72px;
   padding-top: 5px;
 
   font-weight: 700;
@@ -46,11 +49,23 @@
 .contacts {
   @include flex-center;
   gap: 10px;
-
-  margin-right: 36px;
 }
 
 .toggleThemeIcon {
   width: 40px;
   height: 40px;
+}
+
+@media (max-width: 1024px) {
+  .linksList {
+    gap: 40px;
+  }
+
+  .links {
+    gap: 20px;
+  }
+
+  .actions {
+    gap: 15px;
+  }
 }

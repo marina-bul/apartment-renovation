@@ -2,7 +2,7 @@ import { cn } from "shared/libs";
 import cls from "./Button.module.scss";
 import { ButtonHTMLAttributes, FC } from "react";
 
-type Variant = "clear" | "white" | "blue" | "red";
+export type Variant = "clear" | "white" | "blue" | "red";
 type Shape = "circle" | "rounded";
 
 export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
