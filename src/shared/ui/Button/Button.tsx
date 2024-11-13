@@ -2,7 +2,7 @@ import { cn } from "shared/libs";
 import cls from "./Button.module.scss";
 import { ButtonHTMLAttributes, FC } from "react";
 
-export type Variant = "clear" | "white" | "blue" | "red";
+export type Variant = "white" | "blue" | "red";
 type Shape = "circle" | "rounded";
 
 export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
@@ -22,6 +22,7 @@ export const Button: FC<ButtonProps> = (props) => {
 
   return (
     <button
+      // eslint-disable-next-line react/jsx-props-no-spreading
       {...restProps}
       className={cn([cls.button, cls[variant], cls[shape], className])}
     >

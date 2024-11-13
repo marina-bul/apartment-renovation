@@ -7,7 +7,7 @@ import ToggleThemeIcon from "shared/assets/icons/toggleThemeIcon.png";
 import Profile from "shared/assets/icons/profile.svg";
 import { Button } from "shared/ui/Button/Button";
 import { useTranslation } from "react-i18next";
-import useMedia from "shared/hooks/useBreakpoints";
+import useMedia from "shared/hooks/useMedia";
 
 interface NavbarProps {
   className?: string;

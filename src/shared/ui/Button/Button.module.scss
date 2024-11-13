@@ -5,7 +5,7 @@
   justify-content: center;
   gap: 12px;
 
-  padding: 10px;
+  padding: 10px 20px;
   border: none;
 
   font-size: 13px;
@@ -14,14 +14,6 @@
 
   cursor: pointer;
   outline: none;
-
-  &.clear {
-    padding: 0;
-
-    color: var(--color-black);
-
-    background-color: transparent;
-  }
 
   &.red {
     color: var(--color-white);
